@@ -13,6 +13,6 @@ while true do
   rescue => e
     log.puts e.message
   end
-  log.puts "outside temp: #{tm.weather.temperature}, inside: #{tm.thermostats.first.temperature}, state: #{tm.thermostats.first.state}" rescue nil
+  log.puts "outside temp: #{tm.weather.temperature}, inside: #{tm.thermostats.first.temperature}, state: #{tm.thermostats.first.state}, error: #{tm.thermostats.first.error}" rescue nil
   sleep 60
 end
